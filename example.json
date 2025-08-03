@@ -1,257 +1,239 @@
 {
   "type": "scaffold",
-  "appBar": {
-    "type": "appBar",
-    "title": {
-      "type": "text",
-      "data": "Text Field",
-      "style": {
-        "color": "#ffffff",
-        "fontSize": 21
-      }
-    },
-    "backgroundColor": "#4D00E9"
-  },
-  "backgroundColor": "#ffffff",
+  "backgroundColor": "#0F0F2A",
   "body": {
     "type": "singleChildScrollView",
     "child": {
       "type": "container",
       "padding": {
-        "left": 12,
-        "right": 12,
-        "top": 12,
-        "bottom": 12
+        "left": 16,
+        "right": 16,
+        "top": 60,
+        "bottom": 40
+      },
+      "decoration": {
+        "gradient": {
+          "type": "linear",
+          "begin": "topLeft",
+          "end": "bottomRight",
+          "colors": ["#5B21B6", "#0F0F2A"]
+        },
+        "borderRadius": {
+          "all": 24
+        }
       },
       "child": {
         "type": "column",
-        "mainAxisAlignment": "center",
         "crossAxisAlignment": "center",
         "children": [
           {
-            "type": "sizedBox",
-            "height": 24
-          },
-          {
-            "type": "textField",
-            "maxLines": 1,
-            "keyboardType": "text",
-            "textInputAction": "done",
-            "textAlign": "start",
-            "textCapitalization": "none",
-            "textDirection": "ltr",
-            "textAlignVertical": "top",
-            "obscureText": false,
-            "cursorColor": "#FC3F1B",
-            "style": {
-              "color": "#000000"
+            "type": "container",
+            "padding": {
+              "all": 12
             },
             "decoration": {
-              "hintText": "What do people call you?",
-              "filled": true,
-              "icon": {
-                "type": "icon",
-                "iconType": "cupertino",
-                "icon": "person_solid",
-                "size": 24
+              "color": "#1F1F4A",
+              "borderRadius": {
+                "all": 16
               },
-              "hintStyle": {
-                "color": "#797979"
-              },
-              "labelText": "Name*",
-              "fillColor": "#F2F2F2"
+              "boxShadow": [
+                {
+                  "color": "#00000080",
+                  "blurRadius": 16,
+                  "offset": {
+                    "dx": 0,
+                    "dy": 8
+                  }
+                }
+              ]
             },
-            "readOnly": false,
-            "enabled": true
-          },
-          {
-            "type": "sizedBox",
-            "height": 24
-          },
-          {
-            "type": "textField",
-            "maxLines": 1,
-            "keyboardType": "text",
-            "textInputAction": "done",
-            "textAlign": "start",
-            "textCapitalization": "none",
-            "textDirection": "ltr",
-            "textAlignVertical": "top",
-            "obscureText": false,
-            "cursorColor": "#FC3F1B",
-            "style": {
-              "color": "#000000"
-            },
-            "decoration": {
-              "hintText": "Where can we reach you?",
-              "filled": true,
-              "icon": {
-                "type": "icon",
-                "iconType": "cupertino",
-                "icon": "phone_solid",
-                "size": 24
-              },
-              "hintStyle": {
-                "color": "#797979"
-              },
-              "labelText": "Phone number*",
-              "fillColor": "#F2F2F2"
-            },
-            "readOnly": false,
-            "enabled": true
-          },
-          {
-            "type": "sizedBox",
-            "height": 24
-          },
-          {
-            "type": "textField",
-            "maxLines": 1,
-            "keyboardType": "text",
-            "textInputAction": "done",
-            "textAlign": "start",
-            "textCapitalization": "none",
-            "textDirection": "ltr",
-            "textAlignVertical": "top",
-            "obscureText": false,
-            "cursorColor": "#FC3F1B",
-            "style": {
-              "color": "#000000"
-            },
-            "decoration": {
-              "hintText": "Your email address",
-              "filled": true,
-              "icon": {
-                "type": "icon",
-                "iconType": "material",
-                "icon": "email",
-                "size": 24
-              },
-              "hintStyle": {
-                "color": "#797979"
-              },
-              "labelText": "Email",
-              "fillColor": "#F2F2F2"
-            },
-            "readOnly": false,
-            "enabled": true
-          },
-          {
-            "type": "sizedBox",
-            "height": 24
-          },
-          {
-            "type": "sizedBox",
-            "height": 100,
             "child": {
-              "type": "textField",
-              "expands": true,
-              "cursorColor": "#FC3F1B",
-              "style": {
-                "color": "#000000"
-              },
-              "decoration": {
-                "filled": true,
-                "hintStyle": {
-                  "color": "#797979"
+              "type": "column",
+              "crossAxisAlignment": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "🎉 Welcome to my channel!",
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontSize": 34,
+                    "fontWeight": "w700"
+                  },
+                  "textAlign": "center"
                 },
-                "labelText": "Life story",
-                "fillColor": "#F2F2F2"
-              },
-              "readOnly": false,
-              "enabled": true
+                {
+                  "type": "sizedBox",
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "data": "Pro Flutter tricks delivered fast. Subscribe for more.",
+                  "style": {
+                    "color": "#D1CFFC",
+                    "fontSize": 16,
+                    "fontWeight": "w500"
+                  },
+                  "textAlign": "center"
+                },
+                {
+                  "type": "sizedBox",
+                  "height": 20
+                },
+                {
+                  "type": "row",
+                  "mainAxisAlignment": "center",
+                  "children": [
+                    {
+                      "type": "elevatedButton",
+                      "child": {
+                        "type": "text",
+                        "data": "Subscribe 🔔",
+                        "style": {
+                          "color": "#FFFFFF",
+                          "fontWeight": "w600"
+                        }
+                      },
+                      "style": {
+                        "backgroundColor": "#FF5722",
+                        "padding": {
+                          "top": 14,
+                          "bottom": 14,
+                          "left": 24,
+                          "right": 24
+                        },
+                        "borderRadius": {
+                          "all": 12
+                        }
+                      },
+                      "onPressed": {
+                        "type": "custom",
+                        "action": "open_url",
+                        "url": "https://youtube.com/yourchannel"
+                      }
+                    },
+                    {
+                      "type": "sizedBox",
+                      "width": 12
+                    },
+                    {
+                      "type": "elevatedButton",
+                      "child": {
+                        "type": "text",
+                        "data": "Celebrate 🎊",
+                        "style": {
+                          "color": "#0F0F2A",
+                          "fontWeight": "w600"
+                        }
+                      },
+                      "style": {
+                        "backgroundColor": "#FFF176",
+                        "padding": {
+                          "top": 14,
+                          "bottom": 14,
+                          "left": 16,
+                          "right": 16
+                        },
+                        "borderRadius": {
+                          "all": 12
+                        }
+                      },
+                      "onPressed": {
+                        "type": "custom",
+                        "action": "trigger_confetti"
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           },
           {
             "type": "sizedBox",
-            "height": 24
+            "height": 32
           },
           {
-            "type": "textField",
-            "maxLines": 1,
-            "keyboardType": "text",
-            "textInputAction": "done",
-            "textAlign": "start",
-            "textCapitalization": "none",
-            "textDirection": "ltr",
-            "textAlignVertical": "top",
-            "obscureText": true,
-            "cursorColor": "#FC3F1B",
+            "type": "text",
+            "data": "Follow me:",
             "style": {
-              "color": "#000000"
-            },
-            "decoration": {
-              "filled": true,
-              "suffixIcon": {
-                "type": "icon",
-                "iconType": "cupertino",
-                "icon": "eye",
-                "size": 24
-              },
-              "hintStyle": {
-                "color": "#797979"
-              },
-              "labelText": "Password*",
-              "fillColor": "#F2F2F2"
-            },
-            "readOnly": false,
-            "enabled": true
+              "color": "#B3AAFF",
+              "fontSize": 14,
+              "fontWeight": "w600"
+            }
           },
           {
             "type": "sizedBox",
-            "height": 24
+            "height": 12
           },
           {
-            "type": "textField",
-            "maxLines": 1,
-            "keyboardType": "text",
-            "textInputAction": "done",
-            "textAlign": "start",
-            "textCapitalization": "none",
-            "textDirection": "ltr",
-            "textAlignVertical": "top",
-            "obscureText": true,
-            "cursorColor": "#FC3F1B",
-            "style": {
-              "color": "#000000"
-            },
-            "decoration": {
-              "filled": true,
-              "suffixIcon": {
-                "type": "icon",
-                "iconType": "cupertino",
-                "icon": "eye",
-                "size": 24
+            "type": "row",
+            "mainAxisAlignment": "center",
+            "children": [
+              {
+                "type": "iconButton",
+                "icon": {
+                  "type": "icon",
+                  "iconType": "material",
+                  "icon": "telegram",
+                  "size": 28,
+                  "color": "#00ACEE"
+                },
+                "onPressed": {
+                  "type": "custom",
+                  "action": "open_url",
+                  "url": "https://t.me/yourhandle"
+                }
               },
-              "hintStyle": {
-                "color": "#797979"
+              {
+                "type": "sizedBox",
+                "width": 16
               },
-              "labelText": "Re-type password*",
-              "fillColor": "#F2F2F2"
-            },
-            "readOnly": false,
-            "enabled": true
-          },
-          {
-            "type": "sizedBox",
-            "height": 48
-          },
-          {
-            "type": "elevatedButton",
-            "child": {
-              "type": "text",
-              "data": "Submit"
-            },
-            "style": {
-              "backgroundColor": "#4D00E9",
-              "padding": {
-                "top": 8,
-                "left": 12,
-                "right": 12,
-                "bottom": 8
+              {
+                "type": "iconButton",
+                "icon": {
+                  "type": "icon",
+                  "iconType": "material",
+                  "icon": "code",
+                  "size": 28,
+                  "color": "#FFFFFF"
+                },
+                "onPressed": {
+                  "type": "custom",
+                  "action": "open_url",
+                  "url": "https://github.com/yourrepo"
+                }
+              },
+              {
+                "type": "sizedBox",
+                "width": 16
+              },
+              {
+                "type": "iconButton",
+                "icon": {
+                  "type": "icon",
+                  "iconType": "material",
+                  "icon": "share",
+                  "size": 28,
+                  "color": "#FFFFFF"
+                },
+                "onPressed": {
+                  "type": "custom",
+                  "action": "share"
+                }
               }
+            ]
+          },
+          {
+            "type": "sizedBox",
+            "height": 40
+          },
+          {
+            "type": "text",
+            "data": "Built with Flutter • More pro tricks coming 👇",
+            "style": {
+              "color": "#8F8FBA",
+              "fontSize": 12
             },
-            "onPressed": {}
+            "textAlign": "center"
           }
         ]
       }
