@@ -1,0 +1,242 @@
+{
+  "type": "scaffold",
+  "backgroundColor": "#0F0F2A",
+  "body": {
+    "type": "singleChildScrollView",
+    "child": {
+      "type": "container",
+      "padding": {
+        "left": 16,
+        "right": 16,
+        "top": 60,
+        "bottom": 40
+      },
+      "decoration": {
+        "gradient": {
+          "type": "linear",
+          "begin": "topLeft",
+          "end": "bottomRight",
+          "colors": ["#5B21B6", "#0F0F2A"]
+        },
+        "borderRadius": {
+          "all": 24
+        }
+      },
+      "child": {
+        "type": "column",
+        "crossAxisAlignment": "center",
+        "children": [
+          {
+            "type": "container",
+            "padding": {
+              "all": 12
+            },
+            "decoration": {
+              "color": "#1F1F4A",
+              "borderRadius": {
+                "all": 16
+              },
+              "boxShadow": [
+                {
+                  "color": "#00000080",
+                  "blurRadius": 16,
+                  "offset": {
+                    "dx": 0,
+                    "dy": 8
+                  }
+                }
+              ]
+            },
+            "child": {
+              "type": "column",
+              "crossAxisAlignment": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "🎉 Welcome to my channel!",
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontSize": 34,
+                    "fontWeight": "w700"
+                  },
+                  "textAlign": "center"
+                },
+                {
+                  "type": "sizedBox",
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "data": "Pro Flutter tricks delivered fast. Subscribe for more.",
+                  "style": {
+                    "color": "#D1CFFC",
+                    "fontSize": 16,
+                    "fontWeight": "w500"
+                  },
+                  "textAlign": "center"
+                },
+                {
+                  "type": "sizedBox",
+                  "height": 20
+                },
+                {
+                  "type": "row",
+                  "mainAxisAlignment": "center",
+                  "children": [
+                    {
+                      "type": "elevatedButton",
+                      "child": {
+                        "type": "text",
+                        "data": "Subscribe 🔔",
+                        "style": {
+                          "color": "#FFFFFF",
+                          "fontWeight": "w600"
+                        }
+                      },
+                      "style": {
+                        "backgroundColor": "#FF5722",
+                        "padding": {
+                          "top": 14,
+                          "bottom": 14,
+                          "left": 24,
+                          "right": 24
+                        },
+                        "borderRadius": {
+                          "all": 12
+                        }
+                      },
+                      "onPressed": {
+                        "type": "custom",
+                        "action": "open_url",
+                        "url": "https://youtube.com/yourchannel"
+                      }
+                    },
+                    {
+                      "type": "sizedBox",
+                      "width": 12
+                    },
+                    {
+                      "type": "elevatedButton",
+                      "child": {
+                        "type": "text",
+                        "data": "Celebrate 🎊",
+                        "style": {
+                          "color": "#0F0F2A",
+                          "fontWeight": "w600"
+                        }
+                      },
+                      "style": {
+                        "backgroundColor": "#FFF176",
+                        "padding": {
+                          "top": 14,
+                          "bottom": 14,
+                          "left": 16,
+                          "right": 16
+                        },
+                        "borderRadius": {
+                          "all": 12
+                        }
+                      },
+                      "onPressed": {
+                        "type": "custom",
+                        "action": "trigger_confetti"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 32
+          },
+          {
+            "type": "text",
+            "data": "Follow me:",
+            "style": {
+              "color": "#B3AAFF",
+              "fontSize": 14,
+              "fontWeight": "w600"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 12
+          },
+          {
+            "type": "row",
+            "mainAxisAlignment": "center",
+            "children": [
+              {
+                "type": "iconButton",
+                "icon": {
+                  "type": "icon",
+                  "iconType": "material",
+                  "icon": "telegram",
+                  "size": 28,
+                  "color": "#00ACEE"
+                },
+                "onPressed": {
+                  "type": "custom",
+                  "action": "open_url",
+                  "url": "https://t.me/yourhandle"
+                }
+              },
+              {
+                "type": "sizedBox",
+                "width": 16
+              },
+              {
+                "type": "iconButton",
+                "icon": {
+                  "type": "icon",
+                  "iconType": "material",
+                  "icon": "code",
+                  "size": 28,
+                  "color": "#FFFFFF"
+                },
+                "onPressed": {
+                  "type": "custom",
+                  "action": "open_url",
+                  "url": "https://github.com/yourrepo"
+                }
+              },
+              {
+                "type": "sizedBox",
+                "width": 16
+              },
+              {
+                "type": "iconButton",
+                "icon": {
+                  "type": "icon",
+                  "iconType": "material",
+                  "icon": "share",
+                  "size": 28,
+                  "color": "#FFFFFF"
+                },
+                "onPressed": {
+                  "type": "custom",
+                  "action": "share"
+                }
+              }
+            ]
+          },
+          {
+            "type": "sizedBox",
+            "height": 40
+          },
+          {
+            "type": "text",
+            "data": "Built with Flutter • More pro tricks coming 👇",
+            "style": {
+              "color": "#8F8FBA",
+              "fontSize": 12
+            },
+            "textAlign": "center"
+          }
+        ]
+      }
+    }
+  }
+}
