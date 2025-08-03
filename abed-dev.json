@@ -150,15 +150,7 @@
                       "child": {
                         "type": "row",
                         "children": [
-                          {
-                            "type": "text",
-                            "data": "Subscribers:",
-                            "style": {
-                              "color": "#BFBFFF",
-                              "fontSize": 14,
-                              "fontWeight": "w600"
-                            }
-                          },
+                
                           {
                             "type": "sizedBox",
                             "width": 8
