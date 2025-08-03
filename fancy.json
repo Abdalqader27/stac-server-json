@@ -1,49 +1,45 @@
 {
   "type": "scaffold",
-  "backgroundColor": "#0F0F2A",
+  "backgroundColor": "#0A0F27",
   "body": {
     "type": "singleChildScrollView",
     "child": {
       "type": "container",
       "padding": {
-        "left": 16,
-        "right": 16,
-        "top": 60,
-        "bottom": 40
+        "all": 16
       },
       "decoration": {
         "gradient": {
-          "type": "linear",
-          "begin": "topLeft",
-          "end": "bottomRight",
-          "colors": ["#5B21B6", "#0F0F2A"]
-        },
-        "borderRadius": {
-          "all": 24
+          "type": "radial",
+          "center": "topCenter",
+          "radius": 1.2,
+          "colors": ["#0A0F27", "#1F285E", "#0A0F27"]
         }
       },
       "child": {
         "type": "column",
-        "crossAxisAlignment": "center",
+        "crossAxisAlignment": "stretch",
         "children": [
           {
             "type": "container",
             "padding": {
-              "all": 12
+              "all": 16
             },
             "decoration": {
-              "color": "#1F1F4A",
+              "gradient": {
+                "type": "linear",
+                "begin": "topLeft",
+                "end": "bottomRight",
+                "colors": ["#5E4BD8", "#2A1F6A"]
+              },
               "borderRadius": {
-                "all": 16
+                "all": 24
               },
               "boxShadow": [
                 {
-                  "color": "#00000080",
-                  "blurRadius": 16,
-                  "offset": {
-                    "dx": 0,
-                    "dy": 8
-                  }
+                  "color": "#00000090",
+                  "blurRadius": 24,
+                  "offset": { "dx": 0, "dy": 12 }
                 }
               ]
             },
@@ -52,24 +48,71 @@
               "crossAxisAlignment": "center",
               "children": [
                 {
-                  "type": "text",
-                  "data": "🎉 Welcome to my channel!",
-                  "style": {
-                    "color": "#FFFFFF",
-                    "fontSize": 34,
-                    "fontWeight": "w700"
-                  },
-                  "textAlign": "center"
+                  "type": "row",
+                  "mainAxisAlignment": "center",
+                  "children": [
+                    {
+                      "type": "container",
+                      "width": 72,
+                      "height": 72,
+                      "decoration": {
+                        "shape": "circle",
+                        "image": {
+                          "url": "https://avatars.githubusercontent.com/Abdalqader27?s=200",
+                          "fit": "cover"
+                        },
+                        "border": {
+                          "width": 3,
+                          "color": "#FFFFFF"
+                        },
+                        "boxShadow": [
+                          {
+                            "color": "#5B21B6AA",
+                            "blurRadius": 16,
+                            "offset": { "dx": 0, "dy": 8 }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "sizedBox",
+                      "width": 16
+                    },
+                    {
+                      "type": "column",
+                      "crossAxisAlignment": "start",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Abed-Dev",
+                          "style": {
+                            "color": "#FFFFFF",
+                            "fontSize": 28,
+                            "fontWeight": "w800"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "data": "Pro Flutter & Dart wizardry",
+                          "style": {
+                            "color": "#C8C3FF",
+                            "fontSize": 14,
+                            "fontWeight": "w500"
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "sizedBox",
-                  "height": 8
+                  "height": 20
                 },
                 {
                   "type": "text",
-                  "data": "Pro Flutter tricks delivered fast. Subscribe for more.",
+                  "data": "🎉 Welcome back, dev! Get the latest high-impact Flutter trick instantly.",
                   "style": {
-                    "color": "#D1CFFC",
+                    "color": "#E9E7FF",
                     "fontSize": 16,
                     "fontWeight": "w500"
                   },
@@ -77,72 +120,174 @@
                 },
                 {
                   "type": "sizedBox",
-                  "height": 20
+                  "height": 16
                 },
                 {
                   "type": "row",
                   "mainAxisAlignment": "center",
                   "children": [
                     {
+                      "type": "container",
+                      "padding": {
+                        "top": 8,
+                        "bottom": 8,
+                        "left": 16,
+                        "right": 16
+                      },
+                      "decoration": {
+                        "color": "#0F173E",
+                        "borderRadius": {
+                          "all": 12
+                        },
+                        "boxShadow": [
+                          {
+                            "color": "#1F285E",
+                            "blurRadius": 12,
+                            "offset": { "dx": 0, "dy": 6 }
+                          }
+                        ]
+                      },
+                      "child": {
+                        "type": "row",
+                        "children": [
+                          {
+                            "type": "text",
+                            "data": "Subscribers:",
+                            "style": {
+                              "color": "#BFBFFF",
+                              "fontSize": 14,
+                              "fontWeight": "w600"
+                            }
+                          },
+                          {
+                            "type": "sizedBox",
+                            "width": 8
+                          },
+                          {
+                            "type": "text",
+                            "data": "12.4K",
+                            "style": {
+                              "color": "#FFFFFF",
+                              "fontSize": 18,
+                              "fontWeight": "w700"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "sizedBox",
+                      "width": 16
+                    },
+                    {
                       "type": "elevatedButton",
                       "child": {
                         "type": "text",
-                        "data": "Subscribe 🔔",
+                        "data": "Subscribe",
                         "style": {
-                          "color": "#FFFFFF",
-                          "fontWeight": "w600"
+                          "color": "#0F0F27",
+                          "fontWeight": "w700",
+                          "fontSize": 16
                         }
                       },
                       "style": {
-                        "backgroundColor": "#FF5722",
+                        "backgroundColor": "#FFB74D",
                         "padding": {
                           "top": 14,
                           "bottom": 14,
-                          "left": 24,
-                          "right": 24
+                          "left": 26,
+                          "right": 26
                         },
                         "borderRadius": {
-                          "all": 12
+                          "all": 14
+                        },
+                        "shadow": {
+                          "blurRadius": 20,
+                          "color": "#FFB74D80",
+                          "offset": { "dx": 0, "dy": 10 }
                         }
                       },
                       "onPressed": {
                         "type": "custom",
                         "action": "open_url",
-                        "url": "https://youtube.com/yourchannel"
-                      }
-                    },
-                    {
-                      "type": "sizedBox",
-                      "width": 12
-                    },
-                    {
-                      "type": "elevatedButton",
-                      "child": {
-                        "type": "text",
-                        "data": "Celebrate 🎊",
-                        "style": {
-                          "color": "#0F0F2A",
-                          "fontWeight": "w600"
-                        }
-                      },
-                      "style": {
-                        "backgroundColor": "#FFF176",
-                        "padding": {
-                          "top": 14,
-                          "bottom": 14,
-                          "left": 16,
-                          "right": 16
-                        },
-                        "borderRadius": {
-                          "all": 12
-                        }
-                      },
-                      "onPressed": {
-                        "type": "custom",
-                        "action": "trigger_confetti"
+                        "url": "https://youtube.com/abed-dev"
                       }
                     }
                   ]
+                },
+                {
+                  "type": "sizedBox",
+                  "height": 12
+                },
+                {
+                  "type": "container",
+                  "padding": {
+                    "all": 12
+                  },
+                  "decoration": {
+                    "color": "#1F2454",
+                    "borderRadius": {
+                      "all": 12
+                    }
+                  },
+                  "child": {
+                    "type": "row",
+                    "mainAxisAlignment": "spaceBetween",
+                    "children": [
+                      {
+                        "type": "column",
+                        "crossAxisAlignment": "start",
+                        "children": [
+                          {
+                            "type": "text",
+                            "data": "Latest Trick",
+                            "style": {
+                              "color": "#AFAEFF",
+                              "fontSize": 12,
+                              "fontWeight": "w600"
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "data": "Server-driven UI in 60s",
+                            "style": {
+                              "color": "#FFFFFF",
+                              "fontSize": 18,
+                              "fontWeight": "w700"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "elevatedButton",
+                        "child": {
+                          "type": "text",
+                          "data": "Watch Now",
+                          "style": {
+                            "color": "#0A0F27",
+                            "fontWeight": "w700"
+                          }
+                        },
+                        "style": {
+                          "backgroundColor": "#7C4DFF",
+                          "padding": {
+                            "top": 10,
+                            "bottom": 10,
+                            "left": 18,
+                            "right": 18
+                          },
+                          "borderRadius": {
+                            "all": 12
+                          }
+                        },
+                        "onPressed": {
+                          "type": "custom",
+                          "action": "open_url",
+                          "url": "https://youtube.com/abed-dev"
+                        }
+                      }
+                    ]
+                  }
                 }
               ]
             }
@@ -152,17 +297,88 @@
             "height": 32
           },
           {
-            "type": "text",
-            "data": "Follow me:",
-            "style": {
-              "color": "#B3AAFF",
-              "fontSize": 14,
-              "fontWeight": "w600"
+            "type": "container",
+            "padding": {
+              "all": 16
+            },
+            "decoration": {
+              "color": "#1D255E",
+              "borderRadius": {
+                "all": 20
+              }
+            },
+            "child": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "What devs are saying",
+                  "style": {
+                    "color": "#E0DFFF",
+                    "fontSize": 16,
+                    "fontWeight": "w700"
+                  }
+                },
+                {
+                  "type": "sizedBox",
+                  "height": 16
+                },
+                {
+                  "type": "row",
+                  "children": [
+                    {
+                      "type": "expanded",
+                      "child": {
+                        "type": "container",
+                        "padding": {
+                          "all": 14
+                        },
+                        "decoration": {
+                          "color": "#0F173E",
+                          "borderRadius": {
+                            "all": 14
+                          },
+                          "border": {
+                            "width": 1,
+                            "color": "#3A3F84"
+                          }
+                        },
+                        "child": {
+                          "type": "column",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\"Abed-Dev’s tricks saved me hours.\"",
+                              "style": {
+                                "color": "#FFFFFF",
+                                "fontSize": 14,
+                                "fontWeight": "w500"
+                              }
+                            },
+                            {
+                              "type": "sizedBox",
+                              "height": 6
+                            },
+                            {
+                              "type": "text",
+                              "data": "— Mobile Engineer",
+                              "style": {
+                                "color": "#B3B3D9",
+                                "fontSize": 12
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           },
           {
             "type": "sizedBox",
-            "height": 12
+            "height": 36
           },
           {
             "type": "row",
@@ -180,12 +396,12 @@
                 "onPressed": {
                   "type": "custom",
                   "action": "open_url",
-                  "url": "https://t.me/yourhandle"
+                  "url": "https://t.me/abed_dev"
                 }
               },
               {
                 "type": "sizedBox",
-                "width": 16
+                "width": 20
               },
               {
                 "type": "iconButton",
@@ -199,12 +415,12 @@
                 "onPressed": {
                   "type": "custom",
                   "action": "open_url",
-                  "url": "https://github.com/yourrepo"
+                  "url": "https://github.com/Abdalqader27"
                 }
               },
               {
                 "type": "sizedBox",
-                "width": 16
+                "width": 20
               },
               {
                 "type": "iconButton",
@@ -228,7 +444,7 @@
           },
           {
             "type": "text",
-            "data": "Built with Flutter • More pro tricks coming 👇",
+            "data": "Built by Abed-Dev • More pro Flutter tricks coming soon.",
             "style": {
               "color": "#8F8FBA",
               "fontSize": 12
